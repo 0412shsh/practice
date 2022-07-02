@@ -29,8 +29,11 @@ public class ArrayListEx1 {
 		else System.out.println("104없다");
 		
 		//인덱스 4에 있는 값을 알고 싶다
-		//System.out.println(numbers.get(4)); 에러뜸
+		//System.out.println(numbers.get(4)); out of Boundns 에러뜸 
+		
+		//인덱스 3에 있는 값을 알고 싶다
 		System.out.println(numbers.get(3));  //104 출력
+		//인덱스 2에 있는 값을 알고 싶다
 		System.out.println(numbers.get(2)); //103 출력
 		
 		
