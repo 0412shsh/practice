@@ -3,6 +3,18 @@ package h0726;
 class Student{
 	int studentId; //멤변,학번
 	String studentName; //멤변,이름
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Student) {
+			Student std = (Student)obj;
+			if(this.studentId == std.studentId) //재정의한 equals() 메서드는 학생의 학번이 같으면 true반환 
+				return true;
+			else return false;
+		}
+		return false;
+	}
+	
 	
 public Student(int studentId, String studentName) {
 	this.studentId = studentId;
